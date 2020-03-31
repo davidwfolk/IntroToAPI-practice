@@ -17,9 +17,11 @@ export default class CluesController {
   }
 
   getClues() {
+    event.preventDefault()
     CluesService.getClues();
   }
   askQuestion() {
+    event.preventDefault()
     CluesService.askQuestion();
   }
 }
